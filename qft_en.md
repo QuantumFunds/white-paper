@@ -76,7 +76,7 @@ A[A 1000QTF] --> B[B 500QTF]
     The promotion value of B1 is 500
     The total promotion value of account B is 1000+500=1500. After account B1 is created, the promotion of the superior is reduced by 500, while the promotion of the account itself is increased by 500. Although this rule is much better than Example 1, it still causes loss of interest to the promoter.
 
-- _In response to the above promotion problem, a nonlinear algorithm is proposed. The basic computing power of each account is equal to **1.125 power** of the voting amount. The weight of its own promotion computing power is **1** with that of its subordinates, **2** with that of its superiors, and its own weight is **4**._   
+- _In response to the above promotion problem, a nonlinear algorithm is proposed. The basic computing power of each account is equal to **1.125 power** of the voting amount. The weight of its own promotion computing power is **1** with that of its subordinates, **1** with that of its superiors, and its own weight is **6**._   
 > - **Calculation method**  
 > **Basic computing power:** $\Large pow(x) = x^{1.125} = x^{9/8} = x * \sqrt[8]{x}$      
 > **Actual computing power:** $\Large f(x) = 6 * pow(x) + \min(pow(x),pow(x_{up})) + \sum(\min(pow(x),pow(x_{down})))$  
